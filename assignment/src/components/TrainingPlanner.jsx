@@ -6,7 +6,19 @@ import CountdownTimer from "./CountdownTimer";
 const GenerateTraining = () =>{
     let pace = ["Slow", "Fast"]
     let time = [600, 1200, 1800, 2400]
-    let TrainingTypes = [{title: "Pushups", rep: 20}, {title: "Situps", rep: 30}, {title: "Walk", pace: pace[Math.floor(Math.random() * pace.length)], time: time[Math.floor(Math.random() * time.length)]}, {title:"Squats", rep: 10}, {title: "Plank", time: 120}, {title: "Run", pace: pace[Math.floor(Math.random() * pace.length)], time: time[Math.floor(Math.random() * time.length)]}];
+    let TrainingTypes = [
+        {title: "Pushups", rep: 20}, 
+        {title: "Situps", rep: 20}, 
+        {title: "Lunges", rep: 20},
+        {title: "Crunches", rep: 20},
+        {title: "Tricep-dips", rep: 15},
+        {title:"Squats", rep: 10}, {title: "Plank", time: 120}, 
+        {title: "Jumping Jacks", time: 60},
+        {title: "Mountain climbers", time: 60},
+        {title: "Jogging", pace: pace[Math.floor(Math.random() * pace.length)], time: time[Math.floor(Math.random() * time.length)]}, 
+        {title: "Walk", pace: pace[Math.floor(Math.random() * pace.length)], time: time[Math.floor(Math.random() * time.length)]}, 
+        {title: "Run", pace: pace[Math.floor(Math.random() * pace.length)], time: time[Math.floor(Math.random() * time.length)]},
+    ]
     let exercise = TrainingTypes[Math.floor(Math.random() * TrainingTypes.length)]
     return exercise;
 }

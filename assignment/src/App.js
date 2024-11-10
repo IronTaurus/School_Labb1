@@ -2,7 +2,6 @@ import './App.css';
 import SideMenu from './components/SideMenu.jsx';
 import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
 import {Info, Training, Home} from './pages/index.js'
-// import Page1 from './pages/Page1.js';
 
 function App() {
   const routes = [
