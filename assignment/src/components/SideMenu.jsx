@@ -5,8 +5,6 @@ import cogwheel_ico from '../art/cogwheel_ico.png';
 import person_ico from '../art/person_ico.png';
 import schedule_ico from '../art/schedule.png';
 
-
-
 const SideMenu = () => {
     const [popMenu, setOpen] = useState(false);
 
@@ -18,7 +16,6 @@ const SideMenu = () => {
                     <Popup_content path="./info" src={person_ico}/>
                     <Popup_content path="./training" src={schedule_ico}/>
                 </ul>
-                
             </div>
         </div>
     )

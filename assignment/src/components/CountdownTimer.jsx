@@ -1,4 +1,4 @@
-import {useState, useRef} from 'react';
+import {useState, useRef, useEffect} from 'react';
 
 const CountdownTimer = (props) => {
     const [num, setNum] = useState(props.time);
@@ -14,6 +14,14 @@ const CountdownTimer = (props) => {
         }
         setPause((prev) => !prev);
       };
+
+      //useEffect tillåter timern att börja direkt när den laddas, det är inte vad jag vill ha för min timer men jag lämnar koden här.
+      
+      // useEffect(() => {
+      //   intervalRef.current = setInterval(decreaseNum, 1000);
+    
+      //   return () => clearInterval(intervalRef.current);
+      // }, []);
 
     const secondsToMs = (t) => {
         var m = Math.floor(t % 3600 / 60);
