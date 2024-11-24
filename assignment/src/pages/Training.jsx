@@ -1,8 +1,14 @@
 import TrainingPlanner from "../components/TrainingPlanner";
+import WeatherForecast from "../components/WeatherForecast";
+// import Forecast from "../components/Forecast";
 
 const Training = () => {
     return(
-        <TrainingPlanner/>
+        <>
+            <WeatherForecast/>
+            <TrainingPlanner/>
+        </>
+
     )
 }
 

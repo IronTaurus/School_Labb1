@@ -42,3 +42,9 @@
     align-items: center;
     justify-content: flex-start;
 }
+.weather-forecast{
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
