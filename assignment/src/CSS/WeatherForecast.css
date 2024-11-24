@@ -26,6 +26,7 @@
     font-size: 0.7em;
     color: yellow;
     width: 6em;
+    cursor: pointer;
 }
 .cities-droplist{
     margin-top: 2em;
@@ -36,6 +37,7 @@
     z-index: 99;
     border: 2px solid black;
     padding: 0.2em;
+    cursor: pointer;
 }
 .cities-open{
     display: flex;
