@@ -5,7 +5,7 @@ const User = () => {
   const [user, setUser] = useState("Användare 1");
   return (
     <UserContext.Provider value={user}>
-      <h1>{`Hello ${user}!`}</h1>
+      <h1>{`Hej ${user}!`}</h1>
     </UserContext.Provider>
   );
 }
